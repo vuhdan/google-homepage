@@ -3,6 +3,47 @@
 
 <style>
 
+    nav {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .right-links {
+        justify-self: end;
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 99%;
+    }
+
+    .center {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search-buttons {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .middle-footer {
+        justify-self: center;
+    }
+
+    .right-footer {
+        justify-self: end;
+    }
+
 </style>
 
 <html>
@@ -12,34 +53,49 @@
 
     <body>
         <nav>
-            <a href="">About</a>
-            <a href="">Store</a>
-            <a href="">Gmail</a>
-            <a href="">Images</a>
-            <span class="material-icons-outlined">
+            <div class="left-links">
+                <a href="">About</a>
+                <a href="">Store</a>
+            </div>
+            <div class="blank-middle"></div>
+            <div class="right-links">
+                <a href="">Gmail</a>
+                <a href="">Images</a>
+                <span class="material-icons-outlined">
                 menu
                 </span>
-            <button type="button">Sign in</button>
+                <button type="button">Sign in</button>
+            </div>
         </nav>
 
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" id="logo" class="center">
+        
         <label for="searchbar"></label>
-        <input type="search" id="searchbar" name="searchbar" size="50">
+        
+        <input type="search" id="searchbar" name="searchbar" size="50" class="center">
+        
+        <div id="search-buttons">
+            <button type="button">Google Search</button>
+            <button type="button">I'm Feeling Lucky</button>
+        </div>
 
-        <button type="button">Google Search</button>
-        <button type="button">I'm Feeling Lucky</button>
+        <p class="center">Everyone ages 16 and up can get the COVID-19 vaccine. <a href="">Find a vaccination site near you</a></p>
 
-        <p>Everyone ages 16 and up can get the COVID-19 vaccine. <a href="">Find a vaccination site near you</a></p>
-
-        <footer>
-            <a href="">Advertising</a>
-            <a href="">Business</a>
-            <a href="">How Search works</a>
-            <a href="">Carbon Neutral since 2007</a>
-            <a href="">Privacy</a>
-            <a href="">Terms</a>
-            <a href="">Settings</a>
+        <footer id="footer">
+            <div class="left-footer">
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How Search works</a>
+            </div>
+            <div class="middle-footer">
+                <a href="">Carbon Neutral since 2007</a>
+            </div>
+            <div class="right-footer">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+            </div>
+            
         </footer>
 
     </body>
