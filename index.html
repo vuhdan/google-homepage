@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 
 <style>
 
     nav {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin: 20px;
     }
 
     .right-links {
@@ -17,7 +21,10 @@
         bottom: 0;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
-        width: 99%;
+        width: 98%;
+        background-color: #eaecee  ;
+        padding: 18px;
+        color: gray;
     }
 
     .center {
@@ -38,11 +45,41 @@
 
     .middle-footer {
         justify-self: center;
+        color: white;
     }
 
     .right-footer {
         justify-self: end;
     }
+
+    a {
+        color: black;
+        font-size: 13px;
+        margin: 6px;
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+    text-decoration: underline;
+    }
+
+    .sign-in-button {
+        margin: 8px;
+        background-color: #3498db ;
+        color: white;
+        padding: 10px 28px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .material-icons {
+        display: inline-flex;
+        vertical-align: middle;
+    }
+
 
 </style>
 
@@ -55,16 +92,15 @@
         <nav>
             <div class="left-links">
                 <a href="">About</a>
+
                 <a href="">Store</a>
             </div>
             <div class="blank-middle"></div>
             <div class="right-links">
                 <a href="">Gmail</a>
                 <a href="">Images</a>
-                <span class="material-icons-outlined">
-                menu
-                </span>
-                <button type="button">Sign in</button>
+                <span class="material-icons">apps</span>
+                <button type="button" class="sign-in-button">Sign in</button>
             </div>
         </nav>
 
